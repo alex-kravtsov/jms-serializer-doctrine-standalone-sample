@@ -33,24 +33,3 @@ foreach($products as $product) $product->setCategory($category);
 
 $entityManager->persist($category);
 $entityManager->flush();
-
-
-
-// TEST 2
-$data = [
-    'title' => 'Test Product',
-    'description' => '...',
-    'category' => [
-        'id' => $category->getId()
-    ]
-];
-$jsonData = json_encode($data);
-$product = $serializer->deserialize($jsonData, 'Product', 'json');
-
-// var_dump($product);
-// in this case category object should be loaded, that is the problem
-// it works if we set
-// $product->setCategory($category);
-
-$entityManager->persist($product);
-$entityManager->flush();

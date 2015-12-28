@@ -14,8 +14,8 @@ $isDevMode = true;
 $conn = array(
     'driver'=>'mysqli',
     'host'=>'localhost',
-    'user'=>'root',
-    'password'=>'12qw12',
+    'user'=>'test',
+    'password'=>'test',
     'dbname'=>'test',
     'charset'=>'UTF-8',
 );
