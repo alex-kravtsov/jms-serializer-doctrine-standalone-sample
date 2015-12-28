@@ -3,3 +3,10 @@
 composer.phar
 composer.lock
 vendor
+.idea/.name
+.idea/encodings.xml
+.idea/jms-serializer-doctrine-standalone-sample.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
